@@ -1,2 +1,2 @@
-# Wiki-Explorer
+# Wiki-Explore
 Trabalho de Elastic
