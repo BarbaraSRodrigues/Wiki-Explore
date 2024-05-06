@@ -1,0 +1,45 @@
+/* NavBar */
+.nav-bar-group{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    background-color: var(--preto);
+    padding: 23px 350px;
+}
+
+.nav-bar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar-item{
+    color: white;
+}
+
+/* Logo */
+
+.nav-bar-item.nav-bar-logo {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--preto);
+}
+
+.wiki{
+    font-size: 25px;
+}
+
+/* Switch */
+
+.nav-bar-item.nav-bar-switch{
+    margin: 0px 0px;
+}

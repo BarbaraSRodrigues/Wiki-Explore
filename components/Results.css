@@ -1,0 +1,56 @@
+/* Estrutra */
+.result-group{
+    margin: 0 auto;
+    width: 55%;
+    margin-top: 35px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.result-info{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10px ;
+}
+
+/* Textos */
+.result-group p{
+    font-size: 17px;
+}
+
+.title{
+    font-size: 18px;
+    color: var(--azulClaro);
+}
+
+.result-link{
+    font-size: 17px;
+    color: var(--preto);
+}
+
+.result-resume{
+    font-weight: bold;
+}
+
+.word-searched{
+    color: var(--verde);
+}
+
+.dot {
+    height: 3px;
+    width: 3px;
+    background-color: var(--preto);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Quebra de conteudo */
+.break-content-result{
+    width: 56%;
+    margin-top: 40px;
+}
