@@ -9,17 +9,18 @@ import ResultPage from './components/ResultPage';
 function App() {
 
   const[message, SetMessage] = useState("");
+  const[data, setData] = useState([]);
 
-  useEffect(() => {
-    fetch('/wikiexplorer/search?query=square') .then(response => response.json()).then(data => {SetMessage(data)}).catch(error => {console.log("erro", error)});
-  }, []);
+  const returnDocuments = (value) =>{
+    setData(value);
+  }
 
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<IndexPage/>} />
-          <Route path="/result" element={<ResultPage/>} />
+          <Route exact path="/" element={<IndexPage callback = {returnDocuments}/>} />
+          <Route path="/result" element={<ResultPage data={data}/>} />
         </Routes>
       </BrowserRouter>
     </>
