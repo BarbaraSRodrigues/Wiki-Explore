@@ -2,7 +2,11 @@ import './Controls.css'
 
 import Results from './Results'
 
-const Controls = () => {
+const Controls = (props) => {
+
+  const {data} = props;
+  console.log(data);
+
   return (
     <>
       {/* Barra de Controle Inicial */}
@@ -30,7 +34,7 @@ const Controls = () => {
       </div>
 
       {/* Resultados */}
-      <Results></Results>
+      <Results data = {data}/>
 
       {/* Barra de Controle Final */}
       <div className='control-group'>

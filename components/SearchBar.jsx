@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import './SearchBar.css';
 import Modal from './Modal';
 
-const SearchBar = ({ onSearch }) => {
+const SearchBar = ({ onSearch, callback }) => {
   // Use States
   const [openModal, setOpenModal] = useState(false);
   const [documents, setDocuments] = useState([]);
@@ -27,6 +27,7 @@ const SearchBar = ({ onSearch }) => {
         const data = await response.json();
         setDocuments(data);
         console.log(data);
+        callback(data);
       } catch (error){
         console.error('Error fetching documents', error);
       }

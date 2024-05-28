@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Components
 import NavBar from './NavBar';
 import SearchBarResult from './SearchBarResult';
 import Controls from './Controls';
 
-const ResultPage = () => {
+const ResultPage = (props) => {
+
+  const {data} = props;
+  console.log(data);
+
   return (
     <>
       <NavBar></NavBar>
-      <SearchBarResult></SearchBarResult>
-      <Controls></Controls>
+      <SearchBarResult/>
+      <Controls data = {data}/>
     </>
   )
 }

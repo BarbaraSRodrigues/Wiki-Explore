@@ -5,7 +5,13 @@ import './IndexPage.css';
 import SwitchModeIndex from "./SwitchModeIndex";
 import SearchBar from "./SearchBar";
 
-const IndexPage = () => {
+const IndexPage = ({ callback }) => {
+
+  const returnDocuments = (value) =>{
+    console.log(value);
+    callback(value);
+  };
+
   return (
     <>
       <SwitchModeIndex/>
@@ -13,7 +19,7 @@ const IndexPage = () => {
         <p>
           <span className="gradient-text">Wiki</span> explorer
         </p>
-        <SearchBar/>
+        <SearchBar callback={returnDocuments}/>
       </div>
     </>
   )
