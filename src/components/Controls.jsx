@@ -2,12 +2,15 @@ import './Controls.css'
 
 import Results from './Results'
 
-const Controls = () => {
+const Controls = (props) => {
+
+  const {data} = props;
+
   return (
     <>
       {/* Barra de Controle Inicial */}
       <div className='control-group control-group-first'>
-          <p className='results'>X Results</p>
+          <p className='results'>Xs results</p>
           <div className='buttons-group'>
               <p className='pages'>1-10</p>
 
@@ -30,7 +33,7 @@ const Controls = () => {
       </div>
 
       {/* Resultados */}
-      <Results></Results>
+      <Results data = {data}/>
 
       {/* Barra de Controle Final */}
       <div className='control-group'>

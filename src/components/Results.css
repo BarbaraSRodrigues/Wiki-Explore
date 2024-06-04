@@ -24,17 +24,19 @@
 }
 
 .title{
-    font-size: 18px;
+    font-size: 18.5px;
     color: var(--azulClaro);
 }
 
-.result-link{
+.result-link a{
     font-size: 17px;
     color: var(--preto);
+    display: inline-block;
 }
 
 .result-resume{
     font-weight: bold;
+    text-align: justify;
 }
 
 .word-searched{
@@ -51,6 +53,6 @@
 
 /* Quebra de conteudo */
 .break-content-result{
-    width: 56%;
+    width: 85%;
     margin-top: 40px;
 }
