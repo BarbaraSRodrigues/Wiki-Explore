@@ -1,7 +1,12 @@
+
 .groupSwitch{
     display: flex; /* Utiliza flexbox para organizar os elementos em linha */
     justify-content: flex-end;
     margin: 50px 460px 0 0;
+}
+
+.groupSwitchNav{
+  margin: 0;
 }
 
 .switch {

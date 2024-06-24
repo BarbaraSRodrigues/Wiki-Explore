@@ -12,6 +12,14 @@
     padding-bottom: 0px;
 }
 
+.control-group-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 400px;
+    padding-bottom: 0px;
+}
+
 .control-group-first {
     display: flex;
     justify-content: space-between;
@@ -70,4 +78,8 @@
 .break-content-controls{
     width: 60%;
     margin-top: 8px;
+}
+
+.break-content-final{
+    margin-bottom: 100px;
 }

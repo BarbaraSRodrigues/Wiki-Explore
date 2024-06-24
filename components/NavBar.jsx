@@ -1,6 +1,6 @@
 import './NavBar.css';
 
-import SwitchModeResult from './SwitchModeResult';
+import SwitchModeIndex from './SwitchModeIndex';
 
 const NavBar = () => {
   return (
@@ -11,7 +11,7 @@ const NavBar = () => {
                     <span className='gradient-text wiki'>Wiki</span> explorer
                 </li>
                 <li className="nav-bar-item nav-bar-switch">
-                  <SwitchModeResult></SwitchModeResult>
+                  <SwitchModeIndex isNavBar={true}></SwitchModeIndex>
                 </li>
             </ul>
         </nav>

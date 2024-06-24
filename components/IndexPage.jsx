@@ -8,7 +8,6 @@ import SearchBar from "./SearchBar";
 const IndexPage = ({ callback }) => {
 
   const returnDocuments = (value) =>{
-    console.log(value);
     callback(value);
   };
 
@@ -19,7 +18,7 @@ const IndexPage = ({ callback }) => {
         <p>
           <span className="gradient-text">Wiki</span> explorer
         </p>
-        <SearchBar callback={returnDocuments}/>
+        <SearchBar callback={returnDocuments} isResultPage={false}/>
       </div>
     </>
   )
